@@ -28,6 +28,19 @@ try {
         return $entityManager; 
     }
 
+    // Cria a conexão com o banco de dados
+    $conn = DriverManager::getConnection($connectionParams);
+
+    // Cria o banco de dados se não existir
+    $conn->getSchemaManager()->createDatabase('provamagazord');
+
+    // Cria as tabelas no banco de dados
+    $schemaTool = new \Doctrine\ORM\Tools\SchemaTool($entityManager);
+    $schemaTool->createSchema(array(
+        $entityManager->getClassMetadata('Pessoa'),
+        $entityManager->getClassMetadata('Contato')
+    ));
+
 } catch (Exception $e) {
     echo 'Erro ao conectar ao MySQL: ' . $e->getMessage();
 }
