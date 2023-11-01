@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "8081:80"
+    volumes:
+      - ./agenda:/var/www/html
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'provamagazord'
+      MYSQL_PASSWORD: '#test-magazord#'
+      MYSQL_ROOT_PASSWORD: '#test-magazord#'
+    ports:
+      - '3308:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./agenda/db:/var/lib/mysql

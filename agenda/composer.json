@@ -1,0 +1,21 @@
+{
+    "name": "vendor/agenda",
+    "description": "Prova técnica para a vaga de backend da Magazord.",
+    "require": {
+        "doctrine/orm": "^2.16",
+        "doctrine/dbal": "^2.13",
+        "symfony/yaml": "^4.4",
+        "symfony/cache": "^4.4",
+        "doctrine/annotations": "^1.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Agenda\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jhuliene Rodrigues Agostinho"
+        }
+    ]
+}
