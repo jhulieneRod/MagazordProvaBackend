@@ -1,5 +1,4 @@
 # Arquivos de configuração do Doctrine
-/agenda/bin
 /agenda/db
 
 # Diretório de dependências do Composer
