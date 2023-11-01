@@ -81,7 +81,7 @@
                 html:
                     '<form id="formulario">' +
                     '<div class="mb-3">' +
-                    '<input type="hidden" id="pessoaId" value="' + pessoa[0] + '"> ' + // Campo oculto para o ID da pessoa
+                    '<input type="hidden" id="pessoaId" value="' + pessoa[0] + '"> ' +
                     '</div>' +
                     '<div class="mb-3">' +
                     '<label for="nome" class="form-label">Nome:</label>' +
@@ -167,8 +167,8 @@
                 html:
                 '<form id="formulario">' +
                 '<div class="mb-3">' +
-                '<input type="hidden" id="idContato" value="'+contato[0]+'"> ' + // Campo oculto para o ID do contato
-                '<input type="hidden" id="idPessoaContato" value="'+contato[1]+'"> ' + // Campo oculto para o ID da pessoa
+                '<input type="hidden" id="idContato" value="'+contato[0]+'"> ' + 
+                '<input type="hidden" id="idPessoaContato" value="'+contato[1]+'"> ' + 
                 '</div>' +
                 '<div class="mb-3">' +
                 '<label for="tipo">Tipo:</label>' +
